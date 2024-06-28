@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+    </style>
+
+    <script>
+        // let ary = ["parvej", "akil", "rajesh", "jyoti",];
+        
+        // for(let a = 0; a <= 3; a++){
+        //     document.write(ary[a] + "<br>");
+        
+        // }
+        window.onload = function() {
+            let ary = ["parvej", "akil", "rajesh", "jyoti"];
+            let tr = document.getElementById('tr');
+
+            for(let i = 0; i < ary.length; i++) {
+                let th = document.createElement('th');
+                th.innerText = ary[i];
+                tr.appendChild(th);
+            }
+        }
+       
+    </script>
+</head>
+<body>
+    <h1>Sample Styled Table</h1>
+    <table class="styled-table" id="sum">
+        <thead>
+            <tr id="tr">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

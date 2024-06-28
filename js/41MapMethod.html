@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Method</title>
+
+    <script>
+        // syntax
+       /* map(function(){
+            statement;
+        }); */
+
+        // let ary = [10, 20, 30, 40,];
+        let ary = [
+            { name : "parvej", surname : "vahora", age : 30},
+            { name : "akil", surname : "shaikh", age : 31},
+            { name : "ankit", surname : "panchal", age : 28}  
+        ];
+
+
+        let b = ary.map(test);
+        document.write(b);
+
+        function test(x){
+            return x.name + " " + x.surname + " " + x.age + "<br>";
+        }
+            
+           
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

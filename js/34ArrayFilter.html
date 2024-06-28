@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method:  filter</title>
+
+        <script>
+            // syntax : filter(function Name);
+
+            let ages = [10, 12, 19, 20, 17, 5, 25];
+            document.write(ages + "<br><br>");
+
+            let b = ages.filter(chacAdult);
+            document.write(b + "<br><br>");
+
+            function chacAdult(age){
+                return age >= 18;
+            }
+
+        </script>
+    </title>
+</head>
+<body>
+    
+</body>
+</html>

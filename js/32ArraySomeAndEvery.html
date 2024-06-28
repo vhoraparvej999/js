@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method:  some(); & Evary();</title>
+
+    <script>
+        // syntax :  arr.some(element, index, array),thisArg)
+
+        let ages = [18, 20, 21, 23 ];
+        document.write(ages + "<br><br>");
+
+        // let b = ages.some(chekAdult); /*aama game te ek value aapel hisab thi mali jay to value True pass kari dese */
+        let b = ages.every(chekAdult); /* aama aapel value badhij value match nay thay tya sudhi True pass nay kare*/
+        document.write(b + "<br><br>");
+
+        function chekAdult(age){
+            return age >= 18;
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

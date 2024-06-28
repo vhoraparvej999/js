@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional Array</title>
+
+    <script>
+        let ary = [
+            ["parvej", 29, "Male", "B.C.A"],
+            ["Akil", 20, "Male", "B.C.A"],
+            ["Rajes", 1, "Male", "B.C.A"],
+            ["jyoti", 22, "FeMale", "B.C.A"]
+        ]
+        // document.write(ary);
+
+        document.write("<table border='1px'");
+        for (let a = 0; a < ary.length; a++) {
+
+            document.write("<tr>");
+
+            for (let b = 0; b < ary[a].length; b++) {
+                document.write("<td>" + ary[a][b] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

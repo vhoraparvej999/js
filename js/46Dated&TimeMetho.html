@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Mthod</title>
+
+    <script>
+        let now = new Date();
+
+            // Fully date,day,yers and time leva mate 
+            document.write(now);
+
+            // ToDateString()
+            document.write(now.toDateString() + "<br><br>"); // output Fri Jun 28 2024 
+
+            // GetFullYear()
+            document.write(now.getFullYear() + "<br><br>"); // output 2024
+
+            //GetMonth()
+            document.write(now.getMonth() + "<br><br>"); // 0 jan, 1 feb , etc
+
+            //GetDay()
+            document.write(now.getDay() + "<br><br>"); // 0 sundy, 1 jan , etc
+
+            //getHours()
+            document.write(now.getHours() + "<br><br>");
+
+            //getMinutes()
+            document.write(now.getMinutes() + "<br><br>");
+
+            //getSeconds()
+            document.write(now.getSeconds() + "<br><br>");
+
+            //gerMilliseconds()
+            document.write(now.getMilliseconds() + "<br><br>");
+
+            // ssetDate()
+             now.setDate(29);
+             document.write(now + "<br><br>")
+
+            // setMonth()
+            now.setMonth(2);
+            document.write(now + "<br><br>");   
+
+            //setFullYears()
+            now.setFullYear(1993);
+            document.write(now + "<br><br>");
+
+            // setHours()
+            now.setHours(16);
+            document.write(now + "<br><br>");
+
+            document.write(now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear());
+            
+
+        
+
+
+        
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

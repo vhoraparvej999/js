@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+    //    function hello(){
+    //     alert ("hello every one")
+        
+    //    }
+
+    function handleForm(e){
+            e.preventDefault();
+            alert("Form is Submitted");
+        }
+        let username = document.getElementById("username").value
+        let password = document.getElementById("password").value
+
+        document.write(username);
+        // console.log(username) 
+        document.write(password);
+        // console.log(password)
+    </script>
+</head>
+<body>
+    <!-- <button onclick="hello()">click me</button> -->
+    <!-- <p ondblclick="hello()">on dubel click</p>
+    <p onmouseenter="hello()">on mouse entere</p>
+    <p onmouseout="hello()">on mouse oute</p> -->
+
+    <!-- on submit -->
+    <form onsubmit="handleForm(event)" id="form">
+        <input type="text" id="username" required placeholder="Username">
+        <input type="password" id="password" required placeholder="Password">
+        <input type="submit" value="Submit">
+        
+    </form>
+    
+    <script>
+       
+    </script>
+</script>
+</html>

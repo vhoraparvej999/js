@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In Loop</title>
+    <script>
+        /*for (const key in object) {
+            if (Object.hasOwnProperty.call(object, key)) {
+                const element = object[key];
+                
+            } 
+        } */
+
+        let obj ={
+            name : "parvej",
+            surname : "vahora",
+            age : 25,
+            Mobile : 8460009840
+        }
+        for (let key in obj) {
+            // document.write(obj[key] + " ," + "<br>");
+            document.write(key + " : " + obj[key] + "<br>");
+            
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        let a ={
+            fname : "parvej",
+            lname : "vahora",
+            age   : 32,
+            email : "vhoraparvej999@gmail.com",
+            favairate : ['Sirf', 'DDL', 'harry-potter'], // object andar Array lakhvani rit//
+            living:{
+                'city' : 'kheda',
+                'cuntry' : 'india'
+            }, // object na anadr object (Nested object)//
+
+
+            salary : function(){
+            return 25000;        
+            },
+
+            fullname : function(){
+                return a.fname + "  " + this.lname; //aama aapde this etle mate use kariye chiye k tano malik a che teni jagyae this use kari sakay che
+            }
+        }
+        console.log(a);
+        document.write(a + "<br>");
+        document.write(a.fname + "<br>");
+        document.write(a.lname + "<br>");
+        document.write(a.favairate[1] + "<br>");
+        document.write(a.salary()+ "<br>");
+        document.write(a.fullname() + "<br>");
+        document.write(a.living.city + "<br><br>")
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
